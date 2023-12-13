@@ -1,8 +1,12 @@
 #include <iostream>
 #include <fstream>
+
+#include "Vehicle.h"
+#include "Customer.h"
+#include "MaintenanceRecord.h"
 using namespace std;
 
-class Vehicle {
+/*class Vehicle {
 private: 
     char* brand = nullptr;
     int year;
@@ -80,40 +84,19 @@ public:
 protected://помещаю эти функции в protected, так как доступ необхoдим только наследникам, через которые функциями можно будет пользоваться снаружи
 //стоимость регистрации
     virtual void RegistrationPrice(const char* c_status) {//для того, чтобы мы могли переопределить этот метод в классе наследнике/сделать другую реализацию надо сделать его виртуальным
-        cout << "Стоимость регистрации: " << 0 << endl;//0, так как будет переопределение в классах наследниках
-        this->setStatus("Зарегистрировано");
-        cout << "Транспортное средство зарегистрировано." << endl;
+        
     }
 //запись регистрации в отчет
     virtual void RegistrationPriceFile(const char* c_status) {//указатель на базовый класс может принимать ссылки на любого своего наследника/если не будет virtual, то функции не будут переобределяться
-        ofstream file;
-        file.open("Daily_report.txt", ios_base::app);
-        file << "Стоимость регистрации: " << 0 << endl;
-        file << "ЗАРЕГИСТРИРОВАНО" << endl;
-        file.close();
+       
     }
 //стоимости аренды
     virtual void RentPrice(int v_time, const char* c_status) {//virtual нужен, чтобы мы могли использовать указатель на базовый класс и менять поведение классов наследников
-        char status[] = "Впервые";
-        if (equals(c_status, status)) {
-            cout << "Стоимость аренды: " << 0*v_time << endl;//0, так как будет переопределение в классах настелдниках
-        } else {
-            cout << "Стоимость аренды со скидкой 20%: " << setprecision(10) << (0 - 0*0.2)*v_time << endl;
-        }
-        cout << "Транспортное средство арендовано." << endl;
+
     }
 //запись аренды в отчет
     virtual void RentPriceFile(int v_time, const char* c_status) {
-        ofstream file;
-        file.open("Daily_report.txt", ios_base::app);
-        char status[] = "Впервые";
-        if (equals(c_status, status)) {
-            file << "Стоимость аренды: " << 0*v_time << endl;//0, так как будет переопределение в классах настелдниках
-        } else {
-            file << "Стоимость аренды со скидкой 20%: " << setprecision(10) << (0 - 0*0.2)*v_time << endl;
-        }
-        file << "Транспортное средство арендовано." << endl;
-        file.close();
+        
     }
 //запись в отчет информации о техническом средстве
     void getAllFile()const {
@@ -427,7 +410,7 @@ public:
         return fix;
     }
 };
-
+*/
 int main() {
     cout << "Начало рабочего дня. Прием звонков клиентов." << endl <<'\v';
 
@@ -451,8 +434,16 @@ int main() {
 
         char* status = new char[16];
         cout << "Вы постоянный клиент или обратились к нам впервые? "; //надо ввести Постоянный/Впервые
+        char V[] = "Впервые";
+        char P[] = "Постоянный";
         cin >> status;
-
+        if (!Vehicle::equals(status,V) && !Vehicle::equals(status,P)) {
+            while (!Vehicle::equals(status,V) && !Vehicle::equals(status,P)) {
+                cout << "Значение введено неверно, повторите попытку: ";
+                cin >> status;
+            }
+        }
+        
         Customer human(name, mail, age, status);
         human.getAllFile(number);
 
@@ -467,16 +458,32 @@ int main() {
             cin >> work;
             char A[] = "Аренда";
             char R[] = "Регистрация";
+            char T[] = "Тех.обслуживание";
+            if (!Vehicle::equals(work,A) && !Vehicle::equals(work,R) && !Vehicle::equals(work,T)) {
+                while(!Vehicle::equals(work,A) && !Vehicle::equals(work,R) && !Vehicle::equals(work,T)) {
+                    cout << "Значение введено неверно, повторите попытку: ";
+                    cin >> work;
+                }
+            }
 
             ofstream file;
             file.open("Daily_report.txt", ios_base::app);
             file << work << ": ";
             file.close();
 
+            char C[] = "Автомобиль";
+            char G[] = "Грузовик";
+            char M[] = "Мотоцикл";
             if (Vehicle::equals(work, A)) {//аренда
                 char* vehicle = new char[32];
                 cout << "Что вы бы хотели арендовать? Автомобиль/Грузовик/Мотоцикл: ";
                 cin >> vehicle;
+                if (!Vehicle::equals(vehicle,C) && !Vehicle::equals(vehicle,G) && !Vehicle::equals(vehicle,M)) {
+                    while(!Vehicle::equals(vehicle,C) && !Vehicle::equals(vehicle,G) && !Vehicle::equals(vehicle,M)) {
+                        cout << "Значение введено неверно, повторите попытку: ";
+                        cin >> vehicle;
+                    }
+                }
                 char* brand = new char[16];
                 cout << "Марка: ";
                 cin >> brand;
@@ -518,6 +525,12 @@ int main() {
                 char* vehicle = new char[32];
                 cout << "Что вам нужно зарегистрировать? Автомобиль/Грузовик/Мотоцикл: ";
                 cin >> vehicle;
+                if (!Vehicle::equals(vehicle,C) && !Vehicle::equals(vehicle,G) && !Vehicle::equals(vehicle,M)) {
+                    while(!Vehicle::equals(vehicle,C) && !Vehicle::equals(vehicle,G) && !Vehicle::equals(vehicle,M)) {
+                        cout << "Значение введено неверно, повторите попытку: ";
+                        cin >> vehicle;
+                    }
+                }
                 char* brand = new char[16];
                 cout << "Марка: ";
                 cin >> brand;
@@ -557,6 +570,12 @@ int main() {
                 char* vehicle = new char[32];
                 cout << "Какое у вас транспортное средство? Автомобиль/Грузовик/Мотоцикл: ";
                 cin >> vehicle;
+                if (!Vehicle::equals(vehicle,C) && !Vehicle::equals(vehicle,G) && !Vehicle::equals(vehicle,M)) {
+                    while(!Vehicle::equals(vehicle,C) && !Vehicle::equals(vehicle,G) && !Vehicle::equals(vehicle,M)) {
+                        cout << "Значение введено неверно, повторите попытку: ";
+                        cin >> vehicle;
+                    }
+                }
                 char* brand = new char[16];
                 cout << "Марка: ";
                 cin >> brand;
@@ -573,11 +592,16 @@ int main() {
                 char find[] = "Диагностика";
                 char oil[] = "Смена_масла";
                 char details[] = "Замена_деталей";
+                char fix[] = "Ремонт";
+                if (!Vehicle::equals(deal,find) && !Vehicle::equals(deal,oil) && !Vehicle::equals(deal,details) && !Vehicle::equals(deal,fix)) {
+                    while(!Vehicle::equals(deal,find) && !Vehicle::equals(deal,oil) && !Vehicle::equals(deal,details) && !Vehicle::equals(deal,fix)) {
+                        cout << "Значение введено неверно, повторите попытку: ";
+                        cin >> deal;
+                    }
+                }
 
-                char car[] = "Автомобиль";
-                char bike[] = "Мотоцикл";
                 char type[] = "Впервые";
-                if (Vehicle::equals(vehicle, car)) {//автомобиль
+                if (Vehicle::equals(vehicle, C)) {//автомобиль
                     Passenger_car car;
                     car.setAll(brand, year, mileage, "Зарегистрировано");
                     car.getAllFileCar();
@@ -622,7 +646,7 @@ int main() {
                             service.Price(11500,0.2);
                         }
                     }
-                } else if (Vehicle::equals(vehicle, bike)) {//мотоцикл
+                } else if (Vehicle::equals(vehicle, M)) {//мотоцикл
                     Motorcycle motorcycle;
                     motorcycle.setAll(brand, year, mileage, "Зарегистрировано");
                     motorcycle.getAllFileMotorcycle();

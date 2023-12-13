@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libCustomer.h.a CMakeFiles/Customer.h.dir/Customer.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libCustomer.h.a

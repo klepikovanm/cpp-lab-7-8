@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libMaintenanceRecord.h.a CMakeFiles/MaintenanceRecord.h.dir/MaintenanceRecord.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libMaintenanceRecord.h.a

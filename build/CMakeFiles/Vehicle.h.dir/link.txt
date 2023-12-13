@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libVehicle.h.a CMakeFiles/Vehicle.h.dir/Vehicle.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libVehicle.h.a
