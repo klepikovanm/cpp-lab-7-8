@@ -1,43 +1,43 @@
 [
 {
   "directory": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/Customer.h.dir/Customer.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Customer.cpp\"",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/Customer.h.dir/Customer.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Customer.cpp\"",
   "file": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Customer.cpp",
   "output": "CMakeFiles/Customer.h.dir/Customer.cpp.o"
 },
 {
   "directory": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/MaintenanceRecord.h.dir/MaintenanceRecord.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/MaintenanceRecord.cpp\"",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/MaintenanceRecord.h.dir/MaintenanceRecord.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/MaintenanceRecord.cpp\"",
   "file": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/MaintenanceRecord.cpp",
   "output": "CMakeFiles/MaintenanceRecord.h.dir/MaintenanceRecord.cpp.o"
 },
 {
   "directory": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/Vehicle.h.dir/Vehicle.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Vehicle.cpp\"",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/Vehicle.h.dir/Vehicle.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Vehicle.cpp\"",
   "file": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Vehicle.cpp",
   "output": "CMakeFiles/Vehicle.h.dir/Vehicle.cpp.o"
 },
 {
   "directory": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/cpp-lab-7-8.dir/main.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/main.cpp\"",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/cpp-lab-7-8.dir/main.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/main.cpp\"",
   "file": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/main.cpp",
   "output": "CMakeFiles/cpp-lab-7-8.dir/main.cpp.o"
 },
 {
   "directory": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/cpp-lab-7-8.dir/Customer.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Customer.cpp\"",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/cpp-lab-7-8.dir/Customer.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Customer.cpp\"",
   "file": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Customer.cpp",
   "output": "CMakeFiles/cpp-lab-7-8.dir/Customer.cpp.o"
 },
 {
   "directory": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/cpp-lab-7-8.dir/Vehicle.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Vehicle.cpp\"",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/cpp-lab-7-8.dir/Vehicle.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Vehicle.cpp\"",
   "file": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/Vehicle.cpp",
   "output": "CMakeFiles/cpp-lab-7-8.dir/Vehicle.cpp.o"
 },
 {
   "directory": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/cpp-lab-7-8.dir/MaintenanceRecord.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/MaintenanceRecord.cpp\"",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -pthread -o CMakeFiles/cpp-lab-7-8.dir/MaintenanceRecord.cpp.o -c \"/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/MaintenanceRecord.cpp\"",
   "file": "/Users/KlepikovaNM/Desktop/ВШЭ/Языки программирования/cpp-lab-7-8/MaintenanceRecord.cpp",
   "output": "CMakeFiles/cpp-lab-7-8.dir/MaintenanceRecord.cpp.o"
 }

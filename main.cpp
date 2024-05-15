@@ -618,3 +618,9 @@ int main() {
 
 	return 0;
 }
+/*
+для запуска в терминале 
+cmake .
+make
+./cpp-lab-7-8 
+*/
